@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Draggable Gooey</title>
+</head>
+<body>
+    <h2>Essayez l'effet sur Chrome ;)</h2>
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+    </div>
+    <svg>
+        <filter id="gooey">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+            <feColorMatrix values="
+            1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 20 -10
+            "/>
+        </filter>
+    </svg>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="effects.js"></script>
+</body>
+</html>
