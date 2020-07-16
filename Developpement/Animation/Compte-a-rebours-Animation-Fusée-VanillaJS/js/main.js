@@ -8,6 +8,21 @@ const IMG_PATH = 'images/';
 let timer;
 let count;
 
+/************************************************************************************/
+/* ******************************** CODE PRINCIPAL **********************************/
+/************************************************************************************/
+
+// Initialisation des variables globales
+count = 10;
+
+// Sélection des différents éléments du DOM sur lesquels nous allons agir
+const rocket = document.getElementById('rocket');
+const billboard = document.querySelector('#billboard span');
+const firingButton = document.getElementById('firing-button');
+
+// Installation du gestionnaire d'événement au clic sur le bouton de mise à feu
+firingButton.addEventListener('click', onClickFiringButton);
+
 /***********************************************************************************/
 /* ********************************** FONCTIONS ************************************/
 /***********************************************************************************/
@@ -72,18 +87,3 @@ function updateRocket(filename)
 {
     rocket.src = IMG_PATH + filename;
 }
-
-/************************************************************************************/
-/* ******************************** CODE PRINCIPAL **********************************/
-/************************************************************************************/
-
-// Initialisation des variables globales
-count = 10;
-
-// Sélection des différents éléments du DOM sur lesquels nous allons agir
-const rocket = document.getElementById('rocket');
-const billboard = document.querySelector('#billboard span');
-const firingButton = document.getElementById('firing-button');
-
-// Installation du gestionnaire d'événement au clic sur le bouton de mise à feu
-firingButton.addEventListener('click', onClickFiringButton);
