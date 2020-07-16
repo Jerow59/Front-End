@@ -15,7 +15,7 @@ let count;
 // Initialisation des variables globales
 count = 10;
 
-// Sélection des différents éléments du DOM sur lesquels nous allons agir
+// Sélection des différents éléments du DOM sur lesquels agir
 const rocket = document.getElementById('rocket');
 const billboard = document.querySelector('#billboard span');
 const firingButton = document.getElementById('firing-button');
