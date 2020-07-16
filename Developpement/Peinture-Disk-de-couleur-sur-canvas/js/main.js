@@ -6,6 +6,20 @@
 let canvas;
 let context;
 
+// *************************************************************************
+// ********************************* Code principal ************************
+// *************************************************************************
+document.addEventListener('DOMContentLoaded', function(){
+
+    // Sélection de l'élément canvas
+    canvas = document.querySelector('#masterpiece');
+
+    // Sélection du "contexte" 2D qui va servir à dessiner
+    context = canvas.getContext('2d');
+
+    // Installation du gestionnaire d'événement au clic sur le canvas
+    canvas.addEventListener('click', onClickCanvas);
+});
 
 // *************************************************************************
 // ********************************* Fonctions *****************************
@@ -53,18 +67,3 @@ function onClickCanvas(event)
     // On dessine le disque
     disk.draw(context);
 }
-
-// *************************************************************************
-// ********************************* Code principal ************************
-// *************************************************************************
-document.addEventListener('DOMContentLoaded', function(){
-
-    // Sélection de l'élément canvas
-    canvas = document.querySelector('#masterpiece');
-
-    // Sélection du "contexte" 2D qui va servir à dessiner
-    context = canvas.getContext('2d');
-
-    // Installation du gestionnaire d'événement au clic sur le canvas
-    canvas.addEventListener('click', onClickCanvas);
-});
