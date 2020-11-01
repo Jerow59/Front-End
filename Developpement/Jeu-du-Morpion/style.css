@@ -17,7 +17,8 @@
     background: #446cB3;
 }
 
-.container .box{float: left;
+.container .box {
+    float: left;
     width: 100px;
     height: 100px;
     border: 1px solid #000;
