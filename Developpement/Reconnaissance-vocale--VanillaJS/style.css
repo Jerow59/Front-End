@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.talk {
+    display: flex;
+    margin: 20px auto;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: larger;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    max-width: 70%;
+    margin: 0 auto;
+}
