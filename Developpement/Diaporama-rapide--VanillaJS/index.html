@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diaporama</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Slides -->
+        <div class="slides">
+            <img src="https://zupimages.net/up/20/51/7ada.jpg" alt="Paysage de neige" style="width: 100%;">
+        </div>
+        <div class="slides">
+            <img src="https://zupimages.net/up/20/51/cdrk.jpg" alt="Paysage de neige" style="width: 100%;">
+        </div>
+    
+        <!-- Fleches -->
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+    
+    <!-- Boutons -->
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
