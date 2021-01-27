@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #131416;
+}
+
+.hamburger {
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.hamburger span {
+    background-color: #e91e63;
+    display: block;
+    width: 100%;
+    height: .3rem;
+    margin: .3rem 0;
+    border-radius: 5px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background-color: #e91e63;
+    transform: translateX(-215px);
+    transition: all .3s;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
